@@ -55,9 +55,38 @@ public class GayleChap1 {
 			else Hash.put(c,1);
 		 return true;
 	}
+	
+	//Q4 Insert %20 in place of blank in string 
+		public static void ReplaceSpace(char[] str) throws Exception {
+			
+		}
+			int i =str1.length()-1, count=0;
+			char[] string = str1.toCharArray();
+			for(char c: str1.toCharArray()) if(c ==' ') count++; count=count*2/3;
+			while(i>=0) {
+				
+			/*	if(string[i-count]==' ') {
+					System.out.println(i);
+					string[i]='0'; 
+					string[i-1]='2'; 
+					string[i-2]='%';i=i-2;
+				}
+				else string[i]=string[i-count];
+				i--;
+			}*/
+
+			return;
+		}
 
 	public static void main(String[] args) throws Exception {
-		String str1 = "bae", str2 = "bab";
+		String str1 = "Hello Mr John    "; //, str2 = "bab";
+		char[] c = str1.toCharArray();
+
+		ReplaceSpace(c);
+		System.out.println(String.copyValueOf(c));
+		
+        return;
+		
 		// str=ReverseStr(str);
 		// System.out.println(str);
 
@@ -67,6 +96,6 @@ public class GayleChap1 {
 			System.out.println("Not a Pemutation");*/
 	/*	if(UniqueStr(str1)) System.out.println("Unique");
 		else System.out.println("Not Unique");*/
-		ReplaceSpace(str1);
+		
 	}
 }
